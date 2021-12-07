@@ -4,10 +4,9 @@ body{
 
 h1{
     padding: 5px;
-    border-style: dotted;
-    border-color: #0050fd;
-    display: inline-block;
-    }
+    color: #0050fd;
+    text-align:left;
+}
 
 #banner{
     width:100%
