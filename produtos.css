@@ -1,27 +1,87 @@
-.cabecalho{
-
+header{
+    background-color: rgba(0, 102, 255, 0.192);
+    padding: 20px;
 }
-#LogoCabecalho{
-
+.boxCabecalho{
+    position: relative;
+    margin:0 auto;
+    width:940px;
 }
-.menu{
-
+nav{
+    position:absolute;
+    top:110px;
+    right:0;
 }
+nav li {
+    display: inline;
+    margin: 0 0 0 15px; 
+}
+nav a {
+    text-transform:uppercase;
+    color:black;
+    font-weight:bold;
+    font-size:22px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #0050fd;
+    text-decoration:underline ;
+}
+
 .itens{
-
+    position: relative;
+    margin:0 auto;
+    width:940px;
+    padding: 50px 0;
 }
-.produtos{
 
+.itens li{
+    display: inline-block;
+    text-align: center;
+    width:30%;
+    vertical-align:top;
+    margin: o 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border:3px solid rgba(0, 102, 255, 0.192);
+    border-radius: 50px;
 }
-.imgProdutos{
+.itens li:hover{
+    border: 2px dashed #0050fd;  
+}
+.itens li:hover h2{
+    font-size: 35px;
+}
+.itens li:active h2{
+    color: #0050fd;
+}
+
+h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.produtosDescricao{
+    font-size: 18px;
 
 }
 .valor{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px;
+}
+.itens li:hover .valor{
+    font-size: 25px;
+}
 
+.itens li:active .valor{
+    color:#0050fd
 }
 footer{
-
-}
-.LogoFooter{
-    
+    background:url("imagens/bg.jpg") ;
+    text-align: center;
+    color:white;
+    padding: 30px 0;
+    font-size: 12px;
 }
