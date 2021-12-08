@@ -1,3 +1,4 @@
+/*Cabeçalho */ 
 header{
     background-color: rgba(0, 102, 255, 0.192);
     padding: 20px;
@@ -7,6 +8,10 @@ header{
     margin:0 auto;
     width:940px;
 }
+.boxCabecalho li:active{
+    color:#0050fd
+}
+/*menu Navegação cabeçalho*/
 nav{
     position:absolute;
     top:110px;
@@ -23,48 +28,47 @@ nav a {
     font-size:22px;
     text-decoration: none;
 }
-
 nav a:hover{
-    color: #0050fd;
     text-decoration:underline ;
 }
 
+nav a:active{
+    color:#0050fd;
+}
+/*Lista de Produtos*/
 .itens{
     position: relative;
     margin:0 auto;
     width:940px;
     padding: 50px 0;
 }
-
 .itens li{
     display: inline-block;
     text-align: center;
     width:30%;
     vertical-align:top;
-    margin: o 1.5%;
+    margin: 0 1.5%;
     padding: 30px 20px;
     box-sizing: border-box;
     border:3px solid rgba(0, 102, 255, 0.192);
     border-radius: 50px;
 }
 .itens li:hover{
-    border: 2px dashed #0050fd;  
-}
-.itens li:hover h2{
-    font-size: 35px;
-}
-.itens li:active h2{
-    color: #0050fd;
+    border: 2px dashed #2d2d2e;  
 }
 
+.itens li:active{
+    border:dashed  #0050fd;
+}
 h2{
     font-size: 30px;
     font-weight: bold;
 }
-
+.itens li:hover h2{
+    font-size: 32px;
+}
 .produtosDescricao{
     font-size: 18px;
-
 }
 .valor{
     font-size: 20px;
@@ -72,12 +76,9 @@ h2{
     margin: 10px;
 }
 .itens li:hover .valor{
-    font-size: 25px;
+    font-size: 22px;
 }
-
-.itens li:active .valor{
-    color:#0050fd
-}
+/*Rodapé*/
 footer{
     background:url("imagens/bg.jpg") ;
     text-align: center;
