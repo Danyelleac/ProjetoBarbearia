@@ -1,3 +1,55 @@
+/*/////////Reset Browser///////////*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*////////////////Cabeçalho//////////////// */ 
 header{
     background-color: rgba(0, 102, 255, 0.192);
     padding: 20px;
@@ -7,6 +59,10 @@ header{
     margin:0 auto;
     width:940px;
 }
+.boxCabecalho li:active{
+    color:#0050fd
+}
+/*//menu Navegação cabeçalho//*/
 nav{
     position:absolute;
     top:110px;
@@ -23,16 +79,18 @@ nav a {
     font-size:22px;
     text-decoration: none;
 }
-
 nav a:hover{
-    color: #0050fd;
     text-decoration:underline ;
 }
 
-main{
-    text-align: center;
+nav a:active{
+    color:#0050fd;
 }
 
+/*Home*/
+.home{
+    text-align: center;
+}
 
 #banner{
     width:100%
@@ -43,21 +101,23 @@ main{
     padding: 20px;
 }
 
-h2{
+.home h2{
     font-size: 25px;
     font-weight: bold;
     padding-bottom: 20px;
+    text-transform: uppercase;
 }
 
 .principal p{
     font-size: 17px;
+    line-height:22px;
 }
 
-em strong{
+.home em strong{
     color: #0050fd;
 }
 
-.itens{
+.itensHome{
     font-size: 17px;
     font-style: italic;
     text-align:left;
@@ -65,22 +125,152 @@ em strong{
     vertical-align: top;
     margin-right: 15%;
     width:20%;
-
-
 }
-h3{
+
+.home h3{
     font-size: 23px;
     font-weight: bold;
     padding-bottom: 20px;
+    text-transform: uppercase;
 }
+
 .beneficios{
     background-color: #FFFFFF;
     padding:20px;
 }
 
+.itensHome li{
+    font-size: 20px;
+    margin: 28px;
+    width: 100%;
+    border: 2px rgba(0, 102, 255, 0.192) solid;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+
 #imgBeneficios{
     width: 50%;
 }
+/*////////////////////Produtos/////////////////*/
+
+.itensProdutos{
+    position: relative;
+    margin:0 auto;
+    width:940px;
+    padding: 50px 0;
+}
+
+.itensProdutos li{
+    display: inline-block;
+    text-align: center;
+    width:30%;
+    vertical-align:top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border:3px solid rgba(0, 102, 255, 0.192);
+    border-radius: 50px;
+}
+
+.itensProdutos li:hover{
+    border: 2px dashed #2d2d2e;  
+}
+
+.itensProdutos li:active{
+    border:dashed  #0050fd;
+}
+
+.produtos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.itensProdutos li:hover h2{
+    font-size: 32px;
+}
+
+.produtosDescricao{
+    font-size: 18px;
+}
+
+.valor{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.itensProdutos li:hover .valor{
+    font-size: 22px;
+}
+
+/*////////////////////Contato/////////////////*/
+.contato{
+    width:940px;
+    margin:0 auto;
+}
+
+form{
+    margin:40px 0;
+}
+
+form label, form legend {
+    display:block;
+    font-size: 22px;
+    margin:0 0 7px;
+        
+}
+
+.input-padrao {
+    display: block;
+    margin:0 0 22px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+#checkbox{
+    margin: 20px 0;
+}
+
+.enviar{
+    width: 40%;
+    padding:15px 0;
+    background:#0050fd;
+    color:white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.enviar:hover {
+    background-color:rgb(4, 38, 88);
+    transform: scale(1.1);
+}
+
+table{
+    margin:20px 0 40px;
+    text-align: center;
+    margin-left: 70px;
+}
+
+thead{
+    background-color: rgba(0, 102, 255, 0.192);
+    color:#0050fd;
+    font-weight: bold;
+}
+
+td,th{
+    border: 1px dotted #0050fd;
+    padding:5px
+}
+
+
+
+/*////////////////Rodapé de todos////////////////*/
 footer{
     background:url("imagens/bg.jpg") ;
     text-align: center;
