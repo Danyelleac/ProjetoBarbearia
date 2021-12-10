@@ -322,7 +322,7 @@ footer{
 }
 
 @media screen and (max-width:480px){
-    .boxCabecalho, .BenefLista,.video,.mapa,.contato,.itensProdutos {
+    .boxCabecalho, .BenefLista,.mapa,.contato,.itensProdutos {
         width: auto;
     }
     h1 {
@@ -330,5 +330,8 @@ footer{
     }
     nav{
         position:static;
+    }
+    .itensHome, .imgBeneficios .video{
+        width: 100%;
     }
 }
