@@ -1,0 +1,49 @@
+main{
+    position: relative;
+    margin:0 auto;
+    width:940px;
+    padding: 50px 0;
+}
+
+main li{
+    display: inline-block;
+    text-align: center;
+    width:30%;
+    vertical-align:top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border:3px solid rgba(0, 102, 255, 0.192);
+    border-radius: 50px;
+}
+
+main li:hover{
+    border: 2px dashed #2d2d2e;  
+}
+
+main li:active{
+    border:dashed  #0050fd;
+}
+
+main h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+main li:hover h2{
+    font-size: 32px;
+}
+
+.descricaoProdutos{
+    font-size: 18px;
+}
+
+.valor{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+main li:hover .valor{
+    font-size: 22px;
+}
