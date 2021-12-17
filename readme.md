@@ -1,6 +1,6 @@
 <h1>Projeto Barbearia Alura</h1>
 <hr>
-<p>Status do Projeto: &#x26A0; &#x1F7E1; &#x1F4D6; em construção  &#x26A0; &#x1F7E1; &#x1F4D6; </p>
+<p>Status do Projeto: &#x2714; &#x1F7E2; &#x1F4D7;Concluido  &#x2714; &#x1F7E2; &#x1F4D7; </p>
 <p>Este projeto foi desenvolvido através da orientação do professor <strong>Pedro Martins</strong> pela plataforma de cursos <strong>Alura</strong></p>
 <p>Trata-se construção de uma página web da Barbearia Alura utizando HTML e CSS</p>
 <p></p>
